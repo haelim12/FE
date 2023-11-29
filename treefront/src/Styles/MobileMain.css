@@ -7,7 +7,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #465A3D;
+    background-image: url('../../public/Images/BackgroundMainLight.png');
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-text-container{

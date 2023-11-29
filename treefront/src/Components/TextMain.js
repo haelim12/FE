@@ -1,4 +1,4 @@
-import "../Styles/Main.css";
+import "../Styles/MobileMain.css";
 import React from "react";
 import { Link } from "react-router-dom";
 

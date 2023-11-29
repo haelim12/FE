@@ -1,4 +1,4 @@
-import "../Styles/Main.css";
+import "../Styles/MobileMain.css";
 import React, { useEffect, useState } from "react";
 
 function MainLogo() {
