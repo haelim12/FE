@@ -19,10 +19,9 @@ function MainLogo() {
   };
 
   return (
-    <img className="main-logo-img" src={`${process.env.PUBLIC_URL}/Images/${getImageSrc()}`}
+    <img className="main-logo-img" src={`../../Assets/Images/${getImageSrc()}`}
     alt="Logo"></img>
   );
 }
-
 
 export { MainLogo };
