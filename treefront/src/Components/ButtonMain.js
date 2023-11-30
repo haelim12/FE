@@ -1,5 +1,6 @@
 import "../Styles/MobileMain.css";
 import React from "react";
+import PropTypes from 'prop-types';
 
 function RegistButton() {
   return (
@@ -9,12 +10,16 @@ function RegistButton() {
   );
 }
 
-function LookAroungButton() {
+function LookAroundButton({onClick}) {
   return (
-    <div className="main-button lookaround-button">  
+    <div className="main-button lookaround-button" onClick={onClick}>  
       구경하기
     </div>
   );
 }
 
-export { RegistButton, LookAroungButton };
+LookAroundButton.propTypes = {
+  onClick: PropTypes.func,
+};
+
+export { RegistButton, LookAroundButton };

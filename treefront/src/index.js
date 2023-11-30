@@ -1,22 +1,22 @@
 import './index.css';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { LoginView } from './Views/LoginView';
-import { MobileMain } from './Views/MobileMain';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { BrowserRouter } from 'react-router-dom';
+import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
+import store from './Store/Store';
+
+const root = createRoot(document.getElementById("root"));
+
 root.render(
-   <BrowserRouter>
-    <App />
-    <Routes>
-        <Route path="/m" element={<MobileMain/>}/>
-        <Route path="/mlogin" element={<LoginView />}/>
-    </Routes>
-  </BrowserRouter>
+  <Provider store={store}>
+    <BrowserRouter>
+        <App />
+      </BrowserRouter>
+  </Provider>
 );
 
 reportWebVitals();

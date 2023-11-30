@@ -7,10 +7,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: url('../Assets/Images/Main/BackgroundMainLight.png');
-    background-size: cover;
-    background-size: cover;
-    background-position: center;
 }
 
 .main-text-container{
@@ -43,9 +39,6 @@
     margin-bottom: 20px;
 }
 
-.main-logo-img{
-    height: 27vh;
-}
 
 .main-text{
     font-size: 12px;
